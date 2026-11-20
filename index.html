@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>
+      Ecosistemas Agénticos 3D — Ponencia Interactiva | Mg. Jhon Alexis Méndez
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="window">
+      <!-- ========================================================================
+         CUERPO PRINCIPAL (SIDEBAR + ESCENARIO)
+         ======================================================================== -->
+      <div class="workspace" id="workspace">
+        <aside class="sidebar" id="sidebar" aria-label="Módulos de la ponencia">
+          <div class="tree-root">
+            <span>UNISALLE</span>
+            <span class="tree-root__meta" id="slides-count">13 slides</span>
+          </div>
+          <div id="course-tree"></div>
+          <div class="sidebar-progress">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-weight: 700;
+              "
+            >
+              <span>Progreso</span>
+              <span id="progress-text">1 / 12</span>
+            </div>
+            <div class="progress-bar-track">
+              <div
+                class="progress-bar-fill"
+                id="progress-fill"
+                style="width: 8%"
+              ></div>
+            </div>
+          </div>
+        </aside>
+
+        <main id="main-mount"></main>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+       MODAL DE BÚSQUEDA RÁPIDA (⌘K / Ctrl+K)
+       ========================================================================== -->
+    <div class="modal-backdrop" id="search-modal">
+      <div
+        class="search-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Buscador de diapositivas"
+      >
+        <div class="search-modal__input-row">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </svg>
+          <input
+            class="search-modal__input"
+            id="search-input"
+            type="text"
+            placeholder="Buscar: Swarms, Nitro, Carga Cognitiva, Jevons, Golden Paths…"
+          />
+          <button class="icon-btn" id="search-close" type="button">ESC</button>
+        </div>
+        <div class="search-results" id="search-results"></div>
+      </div>
+    </div>
+
+    <script src="js/iso-engine.js"></script>
+    <script src="js/secciones/01-contexto-evolucion.js"></script>
+    <script src="js/secciones/02-carga-cognitiva.js"></script>
+    <script src="js/secciones/03-patrones-swarms.js"></script>
+    <script src="js/secciones/04-platform-sandboxes.js"></script>
+    <script src="js/secciones/05-futuro-ingeniero.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
